@@ -63,6 +63,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		484003D21ECB280600B29B10 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B28259471EA1F6D200F91B2B /* ViewController.swift */,
+				48DD11E21ECAE9EC00AF956C /* ResultViewController.swift */,
+				48EE61E51EBF301F0055602B /* ForgetPassVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		484003D31ECB281C00B29B10 /* Entitys */ = {
+			isa = PBXGroup;
+			children = (
+				48DD11E41ECAF1B200AF956C /* UserInfoEntity+CoreDataClass.swift */,
+				48DD11E51ECAF1B200AF956C /* UserInfoEntity+CoreDataProperties.swift */,
+				48DD11DE1ECADA6200AF956C /* PackInfoEntity+CoreDataClass.swift */,
+				48DD11DF1ECADA6200AF956C /* PackInfoEntity+CoreDataProperties.swift */,
+			);
+			name = Entitys;
+			sourceTree = "<group>";
+		};
+		484003D41ECB282E00B29B10 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4889DA341EBF37AA00AE08E3 /* retrieve_Base.swift */,
+				B2E243321EA34C4C00BFFC6D /* Json4Swift_Base.swift */,
+				B2E243331EA34C4C00BFFC6D /* PackInfo.swift */,
+				B2E243341EA34C4C00BFFC6D /* UserInfo.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		484003D51ECB285700B29B10 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				48F5E59E1EC02C9A00A398D6 /* MainSE.storyboard */,
+				B28259491EA1F6D200F91B2B /* Main.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
 		485FB5F41EB4AB2E0061A674 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,19 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				B28259451EA1F6D200F91B2B /* AppDelegate.swift */,
-				B28259471EA1F6D200F91B2B /* ViewController.swift */,
-				48DD11E21ECAE9EC00AF956C /* ResultViewController.swift */,
-				48EE61E51EBF301F0055602B /* ForgetPassVC.swift */,
-				48DD11E41ECAF1B200AF956C /* UserInfoEntity+CoreDataClass.swift */,
-				48DD11E51ECAF1B200AF956C /* UserInfoEntity+CoreDataProperties.swift */,
-				48DD11DE1ECADA6200AF956C /* PackInfoEntity+CoreDataClass.swift */,
-				48DD11DF1ECADA6200AF956C /* PackInfoEntity+CoreDataProperties.swift */,
-				48F5E59E1EC02C9A00A398D6 /* MainSE.storyboard */,
-				B28259491EA1F6D200F91B2B /* Main.storyboard */,
-				4889DA341EBF37AA00AE08E3 /* retrieve_Base.swift */,
-				B2E243321EA34C4C00BFFC6D /* Json4Swift_Base.swift */,
-				B2E243331EA34C4C00BFFC6D /* PackInfo.swift */,
-				B2E243341EA34C4C00BFFC6D /* UserInfo.swift */,
+				484003D21ECB280600B29B10 /* ViewControllers */,
+				484003D31ECB281C00B29B10 /* Entitys */,
+				484003D51ECB285700B29B10 /* StoryBoards */,
+				484003D41ECB282E00B29B10 /* model */,
 				B282594C1EA1F6D200F91B2B /* Assets.xcassets */,
 				B282594E1EA1F6D200F91B2B /* LaunchScreen.storyboard */,
 				B28259511EA1F6D200F91B2B /* Info.plist */,
