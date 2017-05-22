@@ -113,6 +113,7 @@
 		484003D51ECB285700B29B10 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				B282594E1EA1F6D200F91B2B /* LaunchScreen.storyboard */,
 				48F5E59E1EC02C9A00A398D6 /* MainSE.storyboard */,
 				B28259491EA1F6D200F91B2B /* Main.storyboard */,
 			);
@@ -164,7 +165,6 @@
 				484003D51ECB285700B29B10 /* StoryBoards */,
 				484003D41ECB282E00B29B10 /* model */,
 				B282594C1EA1F6D200F91B2B /* Assets.xcassets */,
-				B282594E1EA1F6D200F91B2B /* LaunchScreen.storyboard */,
 				B28259511EA1F6D200F91B2B /* Info.plist */,
 				48DD11C31ECAD0C300AF956C /* Model.xcdatamodeld */,
 				4853BC121ED2F06700E615CA /* NetworkSessionSample-Bridging-Header.h */,
