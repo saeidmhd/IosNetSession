@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainStory" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkSessionSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainStory" title="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkSessionSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="46.875" y="127.8169014084507"/>
         </scene>
-        <!--Forget PassVC-->
+        <!--ForgetPass-->
         <scene sceneID="yun-wP-3G1">
             <objects>
-                <viewController id="XXk-zS-Epa" customClass="ForgetPassVC" customModule="NetworkSessionSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ForgetPass" id="XXk-zS-Epa" customClass="ForgetPassVC" customModule="NetworkSessionSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0X6-6D-HSo"/>
                         <viewControllerLayoutGuide type="bottom" id="Yei-2u-J8e"/>
@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="778.125" y="127.8169014084507"/>
         </scene>
-        <!--Result View Controller-->
+        <!--Result-->
         <scene sceneID="7J2-LZ-zXY">
             <objects>
-                <viewController storyboardIdentifier="ResultView" id="Rng-wz-Ehc" customClass="ResultViewController" customModule="NetworkSessionSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultView" title="Result" id="Rng-wz-Ehc" customClass="ResultViewController" customModule="NetworkSessionSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Uw-yn-lao"/>
                         <viewControllerLayoutGuide type="bottom" id="d2w-Z0-VDz"/>

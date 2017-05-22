@@ -7,8 +7,24 @@
 //
 
 import UIKit
+import Google
 
 class ViewController: UIViewController,XMLParserDelegate,URLSessionDataDelegate,URLSessionDelegate,UITextFieldDelegate {
+    
+    //send screen name to google analytic
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(true)
+        let name = "iOS~\(self.title!)"
+        
+        guard let tracker = GAI.sharedInstance().defaultTracker else { return }
+        tracker.set(kGAIScreenName, value: name)
+        
+        guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
+        tracker.send(builder.build() as [NSObject : AnyObject])
+        
+    }
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -21,7 +37,6 @@ class ViewController: UIViewController,XMLParserDelegate,URLSessionDataDelegate,
     static var jsonStr : String?
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
-    
     
     
     @IBOutlet weak var ForgetPass: UIButton!
@@ -276,7 +291,7 @@ class ViewController: UIViewController,XMLParserDelegate,URLSessionDataDelegate,
                                 do{
                                     try  backgroundContext.save()
                                     print("success")
-                                }catch {
+                                }catch { 
                                     
                                     print(error.localizedDescription)
                                     

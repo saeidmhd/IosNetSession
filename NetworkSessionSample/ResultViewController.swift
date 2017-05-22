@@ -10,6 +10,23 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
+    
+    //send screen name to google analytic
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(true)
+        let name = "iOS~\(self.title!)"
+        
+        guard let tracker = GAI.sharedInstance().defaultTracker else { return }
+        tracker.set(kGAIScreenName, value: name)
+        
+        guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
+        tracker.send(builder.build() as [NSObject : AnyObject])
+        
+    }
+    
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     var UserContainer : [UserInfoEntity] = []
